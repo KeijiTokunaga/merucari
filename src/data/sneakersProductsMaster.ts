@@ -11,7 +11,7 @@ export const sneakersProductsMaster: ProductsMaster = {
       code: "m000000001",
       name: "Lightspeed XN-842 スニーカー 26cm",
       price: 15800,
-      imageUrl: "/assets/sneakers001.jpg",
+      imageUrl: "../src/assets/sneakers001.jpg",
     },
     {
       code: "m000000002",
