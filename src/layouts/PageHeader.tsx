@@ -1,5 +1,5 @@
 import { Bell, Check, Heart, Search, User } from "lucide-react";
-import logo from "../assets/logo.png";
+import logo from "/logo.png";
 
 export const PageHeader = () => {
   return (
