@@ -17,7 +17,7 @@ export const sneakersProductsMaster: ProductsMaster = {
       code: "m000000002",
       name: "Dream Illusion Q-915 スニーカー 24.5cm",
       price: 4500,
-      imageUrl: "/public/sneakers002.jpg",
+      imageUrl: "/sneakers002.jpg",
     },
     {
       code: "m000000003",
