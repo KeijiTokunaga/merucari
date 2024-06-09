@@ -25,7 +25,7 @@ export const earringsProductsMaster: ProductsMaster = {
       code: "m000000013",
       name: "ハンドメイド　パールイヤリング",
       price: 780,
-      imageUrl: "/src/assets/earrings003.jpg",
+      imageUrl: "/assets/earrings003.jpg",
     },
     {
       code: "m000000014",
