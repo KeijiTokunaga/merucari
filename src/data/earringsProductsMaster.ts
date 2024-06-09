@@ -11,13 +11,15 @@ export const earringsProductsMaster: ProductsMaster = {
       code: "m000000011",
       name: "チャームイヤリング",
       price: 8500,
-      imageUrl: "/src/assets/earrings001.jpg",
+      imageUrl:
+        "https://github.com/stray-code/zenn-mercari-clone/tree/main/src/assets/earrings001.jpg",
     },
     {
       code: "m000000012",
       name: "ロングイヤリング",
       price: 1800,
-      imageUrl: "/src/assets/earrings002.jpg",
+      imageUrl:
+        "https://github.com/stray-code/zenn-mercari-clone/tree/main/src/assets/earrings002.jpg",
     },
     {
       code: "m000000013",
