@@ -1,23 +1,15 @@
-import { useState } from "react";
 import { PageFooter, PageHeader, PageNavigation } from "./layouts";
 import { Categories, Products } from "./components";
-
 import {
   sneakersProductsMaster,
   favorites,
   earringsProductsMaster,
 } from "./data";
+import { useFavorite } from "./hooks/useFavorite";
 
 export default function App() {
-  const [favoriteCodes, setFavoriteCodes] = useState(favorites);
+  const { favoriteCodes, changeFavorite } = useFavorite(favorites);
 
-  const changeFavorite = (productCode: string) => {
-    setFavoriteCodes((prevFavoriteCodes) => {
-      return prevFavoriteCodes.includes(productCode)
-        ? prevFavoriteCodes.filter((code) => code !== productCode)
-        : [...prevFavoriteCodes, productCode];
-    });
-  };
   return (
     <div>
       <div className="sticky top-0 z-10 bg-white">
