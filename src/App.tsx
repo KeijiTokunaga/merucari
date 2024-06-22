@@ -6,7 +6,6 @@ import {
   earringsProductsMaster,
 } from "./data";
 import { useFavorite } from "./hooks/useFavorite";
-import { HereMap } from "./components/HereMap";
 
 export default function App() {
   const { favoriteCodes, changeFavorite } = useFavorite(favorites);
@@ -33,7 +32,6 @@ export default function App() {
           changeFavorite={changeFavorite}
         />
       </main>
-      <HereMap />
       <PageFooter />
       <PageNavigation />
     </div>
