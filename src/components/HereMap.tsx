@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-//import "@here/maps-api-for-javascript";
-import * as H from "@here/maps-api-for-javascript";
+import "@here/maps-api-for-javascript";
+//import * as H from "@here/maps-api-for-javascript";
 
 // Your HERE Maps API Key
 const HERE_API_KEY = "jfyCan5LgXTR0ejF3phIA2w4NeXhFYD9yeDvZKKkg8Y";
@@ -24,10 +24,8 @@ export const HereMap: React.FC = () => {
 
       window.addEventListener("resize", () => map.getViewPort().resize());
 
-      /*
-      const behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
-      const ui = H.ui.UI.createDefault(map, defaultLayers);
-      */
+      // const behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+      // const ui = H.ui.UI.createDefault(map, defaultLayers);
 
       return () => {
         map.dispose();
