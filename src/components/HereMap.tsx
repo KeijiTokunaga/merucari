@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import "@here/maps-api-for-javascript";
+//import "@here/maps-api-for-javascript";
+import * as H from "@here/maps-api-for-javascript";
 
 // Your HERE Maps API Key
 // a
@@ -14,7 +15,7 @@ export const HereMap: React.FC = () => {
         apikey: HERE_API_KEY,
       });
 
-      const defaultLayers = platform.createDefaultLayers();
+      const defaultLayers: any = platform.createDefaultLayers();
 
       const map = new H.Map(mapRef.current, defaultLayers.vector.normal.map, {
         center: { lat: 52.52, lng: 13.405 },
@@ -24,8 +25,10 @@ export const HereMap: React.FC = () => {
 
       window.addEventListener("resize", () => map.getViewPort().resize());
 
+      /*
       const behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
       const ui = H.ui.UI.createDefault(map, defaultLayers);
+      */
 
       return () => {
         map.dispose();
