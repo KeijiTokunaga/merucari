@@ -1,9 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import "@here/maps-api-for-javascript";
-//import * as H from "@here/maps-api-for-javascript";
-
-// Your HERE Maps API Key
-const HERE_API_KEY = "jfyCan5LgXTR0ejF3phIA2w4NeXhFYD9yeDvZKKkg8Y";
 
 export const HereMap: React.FC = () => {
   const mapRef = useRef<HTMLDivElement | null>(null);
@@ -11,7 +7,7 @@ export const HereMap: React.FC = () => {
   useEffect(() => {
     if (mapRef.current) {
       const platform = new H.service.Platform({
-        apikey: HERE_API_KEY,
+        apikey: import.meta.env.VITE_WEATHER_API_KEY,
       });
 
       const defaultLayers: any = platform.createDefaultLayers();
