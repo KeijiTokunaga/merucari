@@ -1,5 +1,5 @@
 import { PageFooter, PageHeader, PageNavigation } from "./layouts";
-import { Categories, Products, HereMap } from "./components";
+import { Categories, Products } from "./components";
 import {
   sneakersProductsMaster,
   favorites,
