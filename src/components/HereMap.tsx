@@ -3,7 +3,6 @@ import React, { useEffect, useRef } from "react";
 import * as H from "@here/maps-api-for-javascript";
 
 // Your HERE Maps API Key
-// a
 const HERE_API_KEY = "jfyCan5LgXTR0ejF3phIA2w4NeXhFYD9yeDvZKKkg8Y";
 
 export const HereMap: React.FC = () => {
